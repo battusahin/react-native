@@ -5,8 +5,7 @@ import {Text, View} from "react-native";
 
 //create component
 const Header = (props) => {
-    const {textStyling, viewStyle} = styles;
-    
+    const {textStyling, viewStyle} = styles;  // destruction?
 
     return (
         <View style={viewStyle}>
@@ -24,8 +23,8 @@ const styles = {
     viewStyle: {
         backgroundColor: 'gainsboro',
         height: 70,
-        justifyContent: 'center',
-        alignItems: 'center',
+        justifyContent: 'center',  // normalde sağa sola, react native'de aşağı yukarı.
+        alignItems: 'center',  // normalde aşağı yukarı, react native'de sağa sola.
         paddingTop: 25,
     }
 }
